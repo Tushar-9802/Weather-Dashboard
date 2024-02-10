@@ -1,7 +1,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: #333;
-    background-image:url("Untitled design/1.png");
+    background-image:url("1.png");
     background-repeat: no-repeat;
     background-size: cover;
     transition: background-color 0.5s, color 0.5s;
@@ -164,7 +164,7 @@ input:checked + .slider:before {
     border: 1px solid #e1d6d6; 
 }
 .dark-mode {
-    background-image: url("Untitled design/2.png");
+    background-image: url("2.png");
     color: #fff;
 }
 .dark-mode .container {
