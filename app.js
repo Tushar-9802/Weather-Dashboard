@@ -43,6 +43,7 @@ async function updateWeatherTable(cityName) {
 searchButton.addEventListener('click', () => {
     const cityName = cityInput.value.trim();
     if (cityName !== '') {
+        window.alert("Please enter a valid Location");
         updateWeatherTable(cityName);
         cityInput.value = '';
     }
