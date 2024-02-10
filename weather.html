@@ -8,17 +8,19 @@
     <title>Weather Dashboard</title>
 </head>
 <body>
+    <div class="toggle-container">
+        <label class="switch">
+            <input type="checkbox" id="dark-mode-toggle">
+            <span class="slider round"></span>
+        </label>
+        <span class="toggle-label">Dark Mode</span>
+    </div>
     <div class="container">
-        <div class="toggle-container">
-            <label class="switch">
-                <input type="checkbox" id="dark-mode-toggle">
-                <span class="slider round"></span>
-            </label>
-            <span class="toggle-label">Dark Mode</span>
-        </div>
+        
         <div class="search-container">
             <input type="text" id="city-input" placeholder="Enter City">
             <button id="search-button">Search</button>
+            
         </div>
         
         <table class="weather-table">
@@ -27,16 +29,46 @@
                     <th>Location</th>
                     <th>Temperature (°C)</th>
                     <th>Description</th>
+                    <th>Humidity (%)</th>
+                    <th>Wind Speed (m/s)</th>
                 </tr>
             </thead>
             <tbody id="weather-body">
             </tbody>
         </table>
     </div>
+    <div class="city-weather">
+    <div class="weather-panel" id="delhi">
+        <h2>Delhi</h2>
+        <p id="delhi-temperature"></p>
+        <p id="delhi-description"></p>
+    </div>
+    
+    <div class="weather-panel" id="chennai">
+        <h2>Chennai</h2>
+        <p id="chennai-temperature">Temperature</p>
+        <p id="chennai-description"></p>
+    </div>
+    
+    <div class="weather-panel" id="hyderabad">
+        <h2>Hyderabad</h2>
+        <p id="hyderabad-temperature"></p>
+        <p id="hyderabad-description"></p>
+    </div>
+    
+    <div class="weather-panel" id="bangalore">
+        <h2>Bangalore</h2>
+        <p id="bangalore-temperature"></p>
+        <p id="bangalore-description"></p>
+    </div>
+    
+    <div class="weather-panel" id="kolkata">
+        <h2>Kolkata</h2>
+        <p id="kolkata-temperature"></p>
+        <p id="kolkata-description"></p>
+    </div>
+</div>
     <script src="app.js"></script>
 </body>
 </html>
-
-    <script src="app.js"></script>
-</body>
-</html>
+    
